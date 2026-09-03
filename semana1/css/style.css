@@ -1,0 +1,50 @@
+/*
+*{
+    border: 1px;
+    border-style: dotted;
+}
+*/
+
+
+body{
+    background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    /*background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    background-image: url(../img/fas.png);
+    background-color: lightgrey;*/
+    color: #2b2b2b;
+}
+
+header{
+    background-color: #123b7a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+}
+
+nav{
+    background-color: white;
+    text-align: center;
+}
+
+.container{
+    max-width: 760px;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+.container article{
+    background-color: white;
+    padding: 20px;
+
+}
+
+footer{
+    background-color: #123b7a;
+    color: white;
+    text-align: center;
+}
