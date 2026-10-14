@@ -296,11 +296,20 @@ Unidades: ${cantidad}`;
 {
   const tareas = ["leer", "practicar", "entregar"];
   // 1. Agregue "revisar" al final y "planificar" al inicio.
+  console.log(tareas.push("revisar"));
+  console.log(tareas.unshift("planificar"));
+  console.log(tareas);
+
   // 2. Reemplace "practicar" por "programar" mediante splice().
+  console.log(tareas.splice(2,1,"programar"));
+  console.log(tareas);
+
   // 3. Elimine la última tarea y conserve el valor retornado.
+  console.log(tareas.pop());
+  console.log(tareas);
+
   // Resultado final: ["planificar", "leer", "programar", "entregar"].
   // Elemento retirado: "revisar".
-  // Desarrollo:
 }
 
 // 2.4. Buscar elementos
@@ -321,11 +330,35 @@ Unidades: ${cantidad}`;
 {
   const participantes = ["Ana", "Luis", "Marta", "Luis"];
   // 1. Obtenga el primer y el último índice de "Luis": 1 y 3.
+  console.log(participantes.indexOf("Luis"));
+  console.log(participantes.lastIndexOf("Luis"));
+
   // 2. Elimine únicamente la primera aparición, usando indexOf() y splice().
+  console.log(participantes.indexOf("Luis"));
+  console.log(participantes.splice(1,1));
+  console.log(participantes);
+
   // 3. Antes de eliminar, compruebe con if que el índice no sea -1.
+  const valor = participantes.indexOf("Luis");
+  if (valor != -1){
+    console.log("El participante fue eliminado.");
+    console.log(participantes)
+  }
+  else{
+    console.log("El participante no existe.");
+  }
+
   // 4. Repita la búsqueda con "Pedro" y compruebe que no se elimina nada.
+  const valor2 = participantes.indexOf("Pedro");
+  if (valor2 != -1){
+    console.log("El participante fue eliminado.");
+    console.log(participantes)
+  }
+  else{
+    console.log("El participante no existe.");
+    console.log(participantes);
+  }
   // Resultado final: ["Ana", "Marta", "Luis"].
-  // Desarrollo:
 }
 
 // 2.5. Inversión y ordenación (fragmento retirado de la diapositiva 31)
