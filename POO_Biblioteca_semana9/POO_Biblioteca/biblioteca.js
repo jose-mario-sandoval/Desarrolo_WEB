@@ -41,13 +41,18 @@ const Biblioteca = (() => {
 
     prestarLibro(libro) {
       // TODO 08: registrar el libro.
+      this.prestamos.push(libro);
       // TODO 14: validar el libro mediante un método estático.
       // TODO 15: comprobar el límite mediante un método privado.
     }
 
+    static validarLibro(libro){
+      return (libro && libro.titulo.trim().lenght>0 && libro.autor.trim().lenght>0);
+    }
+
     devolverLibro(titulo) {
       // TODO 15: eliminar un préstamo por título; devolver true o false.
-      return false;
+      
     }
 
     obtenerPrestamos() {
